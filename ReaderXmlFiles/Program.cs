@@ -6,12 +6,12 @@ namespace ReaderXmlFiles
 {
     class Program
     {
-        public static  void Main(string[] args)
+        public static void Main(string[] args)
         {
             //Console.WriteLine("Hello World!");
             //ReaderXML.ScanXML("C:\\Users\\BondarenkoAS\\MyRepos\\LessonBaseCSharp\\ReaderXmlFiles\\SampleXML");
            // ReaderXML.ScanXML();
-             
+           Console.WriteLine("Load");
         }
     }
 
