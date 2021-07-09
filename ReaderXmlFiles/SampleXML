@@ -1,6 +1,14 @@
-<note>
-<to>Tove</to>
-<from>Jani</from>
-<heading>Reminder</heading>
-<body>Don't forget me this weekend!</body>
-</note>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <GetMessageResponse xmlns="urn://x-artefacts-gnivc-ru/inplat/servin/OpenApiMessageConsumerService/types/1.0">
+            <Message>
+                <AuthResponse xmlns:ns3="urn://x-artefacts-gnivc-ru/inplat/servin/OpenApiAsyncMessageProviderService/types/1.0" xmlns:ns2="urn://x-artefacts-gnivc-ru/ais3/kkt/AuthService/types/1.0" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn://x-artefacts-gnivc-ru/ais3/kkt/AuthService/types/1.0">
+                    <ns2:Result>
+                        <ns2:Token>593c11cb2c1e424a91fcae6696dd7c36</ns2:Token>
+                        <ns2:ExpireTime>2021-07-08T11:32:24.003+03:00</ns2:ExpireTime>
+                    </ns2:Result>
+                </AuthResponse>
+            </Message>
+        </GetMessageResponse>
+    </soap:Body>
+</soap:Envelope>

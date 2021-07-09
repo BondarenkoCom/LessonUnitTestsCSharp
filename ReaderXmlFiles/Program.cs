@@ -1,6 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.CompilerServices;
+using Unity;
+//using Moq;
+
 
 namespace ReaderXmlFiles
 {
@@ -10,10 +13,15 @@ namespace ReaderXmlFiles
         {
             //Console.WriteLine("Hello World!");
             //ReaderXML.ScanXML("C:\\Users\\BondarenkoAS\\MyRepos\\LessonBaseCSharp\\ReaderXmlFiles\\SampleXML");
-           // ReaderXML.ScanXML();
+           //ReaderXML.ScanXML();
            Console.WriteLine("Load");
+           //SeriesDemo.InterfaceDemo();
+     
         }
     }
+
+ 
+
 
     public  class ReaderXML
     {
@@ -37,5 +45,24 @@ namespace ReaderXmlFiles
         
     }
 
-
+    public class SeriesDemo
+    {
+        public static void InterfaceDemo()
+        {
+            ByTwos ob = new ByTwos();
+            for (int i = 0; i < 5; i++)
+                Console.WriteLine("Следующее число равно " + ob.GetNext());
+            Console.WriteLine("\nСбросить");
+            ob.Reset();
+            for (int i = 0; i < 5; i++)
+                Console.WriteLine("Следующее число равно " + ob.GetNext());
+            Console.WriteLine("\nНачать с числа 100");
+            ob.SetStart(100);
+            for (int i = 0; i < 5; i++)
+                Console.WriteLine("Следующее число равно " + ob.GetNext());
+            ob.GetPrevious();
+                for (int i = 100; i < 1; i--)
+                    Console.WriteLine("предыдущее число равно " + ob.GetPrevious());
+        }
+    }
 }
