@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" name="NunitTestRunner.dll" fullname="C:/Users/BondarenkoAS/MyRepos/TestNUnitRunner/TestNUnitRunner/bin/Debug/net5.0-windows/NunitTestRunner.dll" testcasecount="4" result="Failed" start-time="2021-10-05T12:28:50.6361413Z" end-time="2021-10-05T12:29:34.7710103Z" duration="44.134830" total="4" passed="0" failed="4" inconclusive="0" skipped="0" warnings="0" asserts="3" random-seed="1515384520">
+  <command-line><![CDATA[C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\TestNUnitRunner\bin\Debug\net5.0-windows\Listener.dll]]></command-line>
+  <filter />
+  <test-suite type="Assembly" id="1008" name="NunitTestRunner.dll" fullname="C:/Users/BondarenkoAS/MyRepos/TestNUnitRunner/TestNUnitRunner/bin/Debug/net5.0-windows/NunitTestRunner.dll" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2021-10-05T12:28:50.6361413Z" end-time="2021-10-05T12:29:34.7710103Z" duration="44.134830" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="3">
+    <environment framework-version="3.13.2.0" clr-version="5.0.7" os-version="Microsoft Windows 10.0.19042" platform="Win32NT" cwd="C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\TestNUnitRunner\bin\Debug\net5.0-windows" machine-name="SOFT124" user="BondarenkoAS" user-domain="CORP" culture="ru-RU" uiculture="ru-RU" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\TestNUnitRunner\bin\Debug\net5.0-windows" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="11616" />
+      <property name="_APPDOMAIN" value="Listener" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1012" name="NunitTestRunner" fullname="NunitTestRunner" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2021-10-05T12:28:50.6420923Z" end-time="2021-10-05T12:29:34.7709984Z" duration="44.128905" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="3">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1003" name="Tests" fullname="NunitTestRunner.Tests" classname="NunitTestRunner.Tests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2021-10-05T12:28:50.6433827Z" end-time="2021-10-05T12:29:34.7706776Z" duration="44.127295" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="3">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1005" name="Test_A_Uninstall_Agent" fullname="NunitTestRunner.Tests.Test_A_Uninstall_Agent" methodname="Test_A_Uninstall_Agent" classname="NunitTestRunner.Tests" runstate="Runnable" seed="110270767" result="Failed" label="Error" start-time="2021-10-05T12:28:50.6588279Z" end-time="2021-10-05T12:29:01.1124711Z" duration="10.453781" asserts="0">
+          <failure>
+            <message><![CDATA[52264
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+            <stack-trace><![CDATA[   at NunitTestRunner.Tests.Test_A_Uninstall_Agent() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 79
+
+--TearDown
+   at JupiterNunitSeleniumTest.BrowserOps.Close() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\initBrowsers\initBrowse.cs:line 32
+   at NunitTestRunner.Tests.close_Browser() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 183]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1004" name="Test_A_Uninstall_Master_Agent" fullname="NunitTestRunner.Tests.Test_A_Uninstall_Master_Agent" methodname="Test_A_Uninstall_Master_Agent" classname="NunitTestRunner.Tests" runstate="Runnable" seed="1185235732" result="Failed" label="Error" start-time="2021-10-05T12:29:01.1149931Z" end-time="2021-10-05T12:29:11.4892322Z" duration="10.374237" asserts="0">
+          <failure>
+            <message><![CDATA[38376
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+            <stack-trace><![CDATA[   at NunitTestRunner.Tests.Test_A_Uninstall_Master_Agent() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 61
+
+--TearDown
+   at JupiterNunitSeleniumTest.BrowserOps.Close() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\initBrowsers\initBrowse.cs:line 32
+   at NunitTestRunner.Tests.close_Browser() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 183]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1007" name="Test_Install_Terminal_Mode_And_Chrome_For_Clean_OS_Simple_Test" fullname="NunitTestRunner.Tests.Test_Install_Terminal_Mode_And_Chrome_For_Clean_OS_Simple_Test" methodname="Test_Install_Terminal_Mode_And_Chrome_For_Clean_OS_Simple_Test" classname="NunitTestRunner.Tests" runstate="Runnable" seed="861633788" result="Failed" label="Error" start-time="2021-10-05T12:29:11.4892678Z" end-time="2021-10-05T12:29:30.3278892Z" duration="18.838623" asserts="0">
+          <failure>
+            <message><![CDATA[Complete Install
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+            <stack-trace><![CDATA[   at NunitTestRunner.Tests.Test_Install_Terminal_Mode_And_Chrome_For_Clean_OS_Simple_Test() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 174
+
+--TearDown
+   at JupiterNunitSeleniumTest.BrowserOps.Close() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\initBrowsers\initBrowse.cs:line 32
+   at NunitTestRunner.Tests.close_Browser() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 183]]></stack-trace>
+          </failure>
+          <output><![CDATA[Test Load
+]]></output>
+        </test-case>
+        <test-case id="1006" name="Z_Test_Tab_GetCertificatesFromStore_Positive_Test_List_Sert" fullname="NunitTestRunner.Tests.Z_Test_Tab_GetCertificatesFromStore_Positive_Test_List_Sert" methodname="Z_Test_Tab_GetCertificatesFromStore_Positive_Test_List_Sert" classname="NunitTestRunner.Tests" runstate="Runnable" seed="449960512" result="Failed" start-time="2021-10-05T12:29:30.3279319Z" end-time="2021-10-05T12:29:34.7695097Z" duration="4.441579" asserts="3">
+          <failure>
+            <message><![CDATA[Multiple failures or warnings in test:
+  1)   Expected string length 2 but was 0. Strings differ at index 0.
+  Expected: "Cn"
+  But was:  <string.Empty>
+  -----------^
+
+  2)   Expected string length 12 but was 0. Strings differ at index 0.
+  Expected: "SerialNumber"
+  But was:  <string.Empty>
+  -----------^
+
+  3)   Expected string length 5 but was 0. Strings differ at index 0.
+  Expected: "Thumb"
+  But was:  <string.Empty>
+  -----------^
+
+]]></message>
+            <stack-trace><![CDATA[   at NunitTestRunner.Tests.Z_Test_Tab_GetCertificatesFromStore_Positive_Test_List_Sert() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 112
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 2 but was 0. Strings differ at index 0.
+  Expected: "Cn"
+  But was:  <string.Empty>
+  -----------^
+]]></message>
+              <stack-trace><![CDATA[   at NunitTestRunner.Tests.<>c__DisplayClass12_0.<Z_Test_Tab_GetCertificatesFromStore_Positive_Test_List_Sert>b__0() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 114
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at NunitTestRunner.Tests.Z_Test_Tab_GetCertificatesFromStore_Positive_Test_List_Sert() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 112
+]]></stack-trace>
+            </assertion>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 12 but was 0. Strings differ at index 0.
+  Expected: "SerialNumber"
+  But was:  <string.Empty>
+  -----------^
+]]></message>
+              <stack-trace><![CDATA[   at NunitTestRunner.Tests.<>c__DisplayClass12_0.<Z_Test_Tab_GetCertificatesFromStore_Positive_Test_List_Sert>b__0() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 115
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at NunitTestRunner.Tests.Z_Test_Tab_GetCertificatesFromStore_Positive_Test_List_Sert() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 112
+]]></stack-trace>
+            </assertion>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 5 but was 0. Strings differ at index 0.
+  Expected: "Thumb"
+  But was:  <string.Empty>
+  -----------^
+]]></message>
+              <stack-trace><![CDATA[   at NunitTestRunner.Tests.<>c__DisplayClass12_0.<Z_Test_Tab_GetCertificatesFromStore_Positive_Test_List_Sert>b__0() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 116
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at NunitTestRunner.Tests.Z_Test_Tab_GetCertificatesFromStore_Positive_Test_List_Sert() in C:\Users\BondarenkoAS\MyRepos\TestNUnitRunner\NunitTestRunner\AutoTestsSimple.cs:line 112
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>                                            

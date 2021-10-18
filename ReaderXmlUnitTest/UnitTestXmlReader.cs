@@ -9,23 +9,56 @@ using NUnit.Framework.Internal;
 using ReaderXmlFiles;
 using FluentAssertions;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Xml.Linq;
 
-namespace ReaderXmlUnitTest 
+namespace ReaderXmlUnitTest
 {
-
-
-
-    [TestFixture]
-    public class TestNewFrameWork
+    public class XmlTests
     {
+        //private string _TestXmlFile =
+        //    "C:\\Users\\BondarenkoAS\\MyRepos\\LessonBaseCSharp\\ReaderXmlFiles\\SampleXML";
+        //
+        //private string _ExpectedXmlFile =
+        //    "C:\\Users\\BondarenkoAS\\MyRepos\\LessonBaseCSharp\\ReaderXmlFiles\\ExpectedSampleXML";
+        //
+        //private string _EmptyXmlFile =
+        //    "C:\\Users\\BondarenkoAS\\MyRepos\\LessonBaseCSharp\\ReaderXmlFiles\\EmptySampleXML";
+
         private string _NewactualNumber;
 
-        [SetUp]
-        public void SetUp()
-        {
-            _NewactualNumber = "1234567890";
-        }
+       // private XmlDocument document;
+       // private ReaderXML _readerXml;
+       //
+       // [SetUp]
+       // public void SetUp()
+       // {
+       //     this.document = new XmlDocument();
+       //     this._readerXml = new ReaderXML();
+       //     _NewactualNumber = "1234567890";
+       // }
+
+//
+//        [Test]
+//        public void TestXPath()
+//        {
+//            //Assert.AreEqual("Jdsf" , _readerXml.ScanXML());
+//            Assert.Pass(_readerXml.ScanXML().ToString());
+//        }
+//
+//        [Test]
+//        //[TestCase("C:\\Users\\BondarenkoAS\\MyRepos\\LessonBaseCSharp\\ReaderXmlFiles\\SampleXML")]
+//        //[Ignore("Temporarily disabled")]
+//        public void Input_valid_XML_Lenght()
+//        {
+//            var _ReaderXML = new ReaderXML();
+//            var result = _ReaderXML.ScanXML();
+//            var ActResult = _ReaderXML.ScanXML();
+//
+//            Assert.AreEqual(result.Length, ActResult.Length);
+//            //Assert.AreEqual(result.Length, "<note>\r\n<to>Tove</to>\r\n<from>Jani</from>\r\n<heading>Reminder</heading>\r\n<body>Don't forget me this weekend!</body>\r\n</note>".Length);
+//        }
+//
 
         [Test]
         public void TestNewFramework()
@@ -33,7 +66,7 @@ namespace ReaderXmlUnitTest
             //FluentAssertions
             //Should() сравнивает ¬водимые  и  ожидаемые данные
             _NewactualNumber.Should().Be("1234567890");
-            
+
         }
 
 
@@ -45,36 +78,15 @@ namespace ReaderXmlUnitTest
 
         }
 
-
-    }
-
-    [TestFixture]
-    public  class XmlTests
-    {
-
-        private string _TestXmlFile = "C:\\Users\\BondarenkoAS\\MyRepos\\LessonBaseCSharp\\ReaderXmlFiles\\SampleXML";
-        private string _ExpectedXmlFile = "C:\\Users\\BondarenkoAS\\MyRepos\\LessonBaseCSharp\\ReaderXmlFiles\\ExpectedSampleXML";
-        private  string _EmptyXmlFile = "C:\\Users\\BondarenkoAS\\MyRepos\\LessonBaseCSharp\\ReaderXmlFiles\\EmptySampleXML";
-        
-
-        [Test]
-        //[Ignore("Temporarily disabled")]
-        public void Input_valid_XML_Lenght()
-        {
-            var _ReaderXML = new ReaderXML();
-
-           var result = _ReaderXML.ScanXML();
-
-           
-            //Assert
-
-            Assert.AreEqual(result.Length, "<note>\r\n<to>Tove</to>\r\n<from>Jani</from>\r\n<heading>Reminder</heading>\r\n<body>Don't forget me this weekend!</body>\r\n</note>".Length);
-
-            //Assert.AreNotEqual(result.Length, "<note>\r\n<to>Tove</to>\r\n<from>Jani</from>\r\n<heading>Reminder</heading>\r\n<body>Don't forget me this weekend!</body>\r\n</note>".Length);
-            //Assert.That( result.Length , Is.Not.Length);
-            //Assert.That(result.Length, Does.Exist);
-            //сделать проверку на формат файла
-        }
+     //   [Test]
+     //   public void Input_Broken_Nums_UseRectMethod()
+     //   {
+     //       var _Rect = new Rect(w: 3, h: 2);
+     //       var _RectUseData = new Rect.UseRect();
+     //
+     //
+     //
+     //   }
 
 
 

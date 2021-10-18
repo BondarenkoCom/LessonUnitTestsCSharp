@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnitLite" Version="3.13.2" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="93.0.4577.6300" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SeleniumNUnitConsoleTestLoad\SeleniumNUnitConsoleTestLoad.csproj" />
+  </ItemGroup>
+
+</Project>
