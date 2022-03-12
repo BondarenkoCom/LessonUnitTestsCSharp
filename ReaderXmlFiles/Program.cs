@@ -28,10 +28,6 @@ namespace ReaderXmlFiles
 
         }
 
-
-
-
-
         public class ParameterSenderLink
         {
             public static void Addition(ref int x , int t)

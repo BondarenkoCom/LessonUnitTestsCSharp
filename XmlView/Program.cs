@@ -32,18 +32,6 @@ namespace XmlView
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.ReadKey();
-
-            //foreach (XmlNode xnode in xRoot )
-            //{
-            //    if (xnode.Attributes.Count > 0)
-            //    {
-            //        XmlNode attr = xnode.Attributes.GetNamedItem("name");
-            //        //XmlNode attr = xnode.ParentNode;
-            //        if (attr!= null)
-            //            Console.ForegroundColor = ConsoleColor.Yellow;
-            //        Console.WriteLine(attr.Value);
-            //    }
-            //}
         }
     }
 }

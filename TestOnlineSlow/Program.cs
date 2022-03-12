@@ -15,7 +15,7 @@ namespace TestOnlineSlow
             //Отключение от Интернета:
             ControlInternet.InternetConnection("ipconfig", "/release");
 
-            System.Threading.Thread.Sleep(20000);
+            System.Threading.Thread.Sleep(5000);
 
 
             //Подключение к Интернету:
